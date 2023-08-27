@@ -10,26 +10,28 @@ import SixthComponent from './components/mainComponents/SixthComponent';
 import SeventhComponent from './components/mainComponents/SeventhComponent';
 import EighthComponent from './components/mainComponents/EighthComponent';
 import AppBar from './components/appbar/AppBar';
+import MarqueeHeader from './components/marquee/MarqueeHeader';
 import FloatingButton from './components/floatingButton/FloatingButton';
 import Footer from './components/footer/Footer';
 
 const App = () => {
   return (
-    <div>
+    <div className=''>
       <AppBar />
       <FloatingButton />
-      <div className='w-screen min-h-screen'>
-          <div className=' overflow-hidden'>
-            <FirstComponent/>
-            <SecondComponent />
-            <ThirdComponent />
-            <FourthComponent />
-            <FifthComponent />
-            <SixthComponent />
-            <SeventhComponent />
-            <EighthComponent />
-          </div>
-          <Footer />
+      <div className='relative w-screen min-h-screen mt-14'>
+        <div className='fixed top-14 left-0 z-10 w-screen'>
+          <MarqueeHeader />
+        </div>
+        <FirstComponent/>
+        <SecondComponent />
+        <ThirdComponent />
+        <FourthComponent />
+        <FifthComponent />
+        <SixthComponent />
+        <SeventhComponent />
+        <EighthComponent />
+        <Footer />
       </div>
     </div>
   );

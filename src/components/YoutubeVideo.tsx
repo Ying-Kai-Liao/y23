@@ -5,6 +5,7 @@ interface YouTubeVideoProps {
     height?: number,
     src: string,
     title?: string,
+    ratio?: number
 }
 
 const YouTubeVideo: React.FC<YouTubeVideoProps> = ({
@@ -12,9 +13,18 @@ const YouTubeVideo: React.FC<YouTubeVideoProps> = ({
     height = 315,
     src,
     title = 'YouTube video player',
+    ratio = 1,
   }) => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
+    <div 
+      className={`flex justify-center items-center`}
+      style={{
+        width: `${width}px`,
+        height: `${height}px`,
+        transform: `scale(${ratio})`,
+        transformOrigin: 'center center'
+      }}
+    >
       <iframe
         width={width}
         height={height}
