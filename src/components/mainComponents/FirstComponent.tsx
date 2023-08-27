@@ -4,13 +4,16 @@ import useWindowSize from '../../hook/useWindowSize'
 const FirstComponent = () => {
     const size = useWindowSize()
     const isMobile = size.width <= 768;
-    const randomDuration = `${Math.random() * 1 + 3}s`; // Random duration between 3 to 4 seconds
-    const randomDelay = `${Math.random() * 1}s`; // Random delay between 0 to 1 second
 
-    const imageStyle = {
-        animationDuration: randomDuration,
-        animationDelay: randomDelay,
-    };
+    const handleClick = (id:string) => {
+        const element = document.getElementById(id);
+        if (element) {
+          window.scrollTo({
+            top: element.offsetTop,
+            behavior: "smooth",
+          });
+        }
+      };
 
     return (
         <div
@@ -23,10 +26,11 @@ const FirstComponent = () => {
         >
             <div className="relative">
                 <img
-                    id="image1" src="/image/1-1.png" alt="理周島民幸福島"
+                    id="image1" src="/image/1-1.png" alt="名人幸福知識島"
                     className={`absolute w-[28.1vw] h-[24.3vw] top-[10.5vw] right-[2vw]
                             transition-all duration-300 ease-in-out hover:scale-110 hover:animate-none 
                             animate-[float_3s_1s_ease-in-out_infinite]`}
+                            onClick={()=> handleClick('03')}
                 />
                 {/* <button
                     className="absolute top-[15.5vw] right-[3vw] 
@@ -43,6 +47,7 @@ const FirstComponent = () => {
                     className={`absolute w-[27.5vw] h-[19.2vw] top-[6.8vw] right-[35.5vw]
                             transition-all duration-300 ease-in-out hover:scale-110 hover:animate-none 
                             animate-[float_3.5s_0.8s_ease-in-out_infinite]`}
+                    onClick={()=> handleClick('04')}
                 />
                 {/* <button
                     className="absolute top-[9vw] right-[38vw] 
@@ -59,6 +64,7 @@ const FirstComponent = () => {
                     className={`absolute w-[34.9vw] h-[26.5vw] top-[12vw] right-[61.2vw]
                             transition-all duration-300 ease-in-out hover:scale-110 hover:animate-none 
                             animate-[float_3.8s_0.3s_ease-in-out_infinite]`}
+                            onClick={()=> handleClick('02')}
                 />
                 {/* <button
                     className="absolute top-[13vw] right-[65vw] 
@@ -71,10 +77,11 @@ const FirstComponent = () => {
             </div>
             <div className="relative">
                 <img
-                    id="image3" src="/image/1-3.png" alt="幸福理財遊戲島"
+                    id="image3" src="/image/1-3.png" alt="幸福共學島"
                     className={`absolute w-[44.7vw] h-[35.8vw] top-[19.5vw] right-[25.8vw]
                             transition-all duration-300 ease-in-out hover:scale-110 hover:animate-none 
                             animate-[float_3s_0.1s_ease-in-out_infinite]`}
+                            onClick={()=> handleClick('05')}
                 />
                 {/* <button
                     className="absolute top-[25vw] right-[30vw] 
