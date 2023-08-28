@@ -24,11 +24,11 @@ const FirstComponent = () => {
                     : { backgroundImage: "url(/image/1-0.jpg)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }
             }
         >
-            <div className="relative">
+            <div className="relative hidden md:block">
                 <img
                     id="image1" src="/image/1-1.png" alt="名人幸福知識島"
                     className={`absolute w-[28.1vw] h-[24.3vw] top-[10.5vw] right-[2vw]
-                            transition-all duration-300 ease-in-out hover:scale-110 hover:animate-none 
+                            transition-all duration-500 ease-in-out hover:scale-90 hover:animate-none 
                             animate-[float_3s_1s_ease-in-out_infinite]`}
                             onClick={()=> handleClick('03')}
                 />
@@ -41,11 +41,11 @@ const FirstComponent = () => {
                 >
                 </button> */}
             </div>
-            <div className="relative">
+            <div className="relative hidden md:block">
                 <img
                     id="image2" src="/image/1-2.png" alt="幸福理財遊戲島"
                     className={`absolute w-[27.5vw] h-[19.2vw] top-[6.8vw] right-[35.5vw]
-                            transition-all duration-300 ease-in-out hover:scale-110 hover:animate-none 
+                            transition-all duration-500 ease-in-out hover:scale-90 hover:animate-none 
                             animate-[float_3.5s_0.8s_ease-in-out_infinite]`}
                     onClick={()=> handleClick('04')}
                 />
@@ -58,11 +58,11 @@ const FirstComponent = () => {
                 >
                 </button> */}
             </div>
-            <div className="relative">
+            <div className="relative hidden md:block">
                 <img
                     id="image4" src="/image/1-4.png" alt="理周島民ptt"
                     className={`absolute w-[34.9vw] h-[26.5vw] top-[12vw] right-[61.2vw]
-                            transition-all duration-300 ease-in-out hover:scale-110 hover:animate-none 
+                            transition-all duration-500 ease-in-out hover:scale-90 hover:animate-none 
                             animate-[float_3.8s_0.3s_ease-in-out_infinite]`}
                             onClick={()=> handleClick('02')}
                 />
@@ -75,11 +75,11 @@ const FirstComponent = () => {
                 >
                 </button> */}
             </div>
-            <div className="relative">
+            <div className="relative hidden md:block">
                 <img
                     id="image3" src="/image/1-3.png" alt="幸福共學島"
                     className={`absolute w-[44.7vw] h-[35.8vw] top-[19.5vw] right-[25.8vw]
-                            transition-all duration-300 ease-in-out hover:scale-110 hover:animate-none 
+                            transition-all duration-500 ease-in-out hover:animate-none hover:scale-90 
                             animate-[float_3s_0.1s_ease-in-out_infinite]`}
                             onClick={()=> handleClick('05')}
                 />
@@ -91,6 +91,16 @@ const FirstComponent = () => {
                     onMouseLeave={() => document.getElementById('image3')?.classList.remove('scale-110')}
                 >
                 </button> */}
+            </div>
+
+            <div className="relative hidden md:block">
+                <img
+                    id="image3" src="/image/1-5.png" alt="打造"
+                    className={`absolute w-[70.4vw] h-[24.1vw] top-[41.5vw] right-[10.8vw]
+                            transition-all duration-500 
+                            `}
+                            onClick={()=> handleClick('05')}
+                />
             </div>
         </div>
     )

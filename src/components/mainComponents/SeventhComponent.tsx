@@ -31,7 +31,7 @@ const SeventhComponent = () => {
                 <VisibilitySensor onChange={onVisibilityChange}>
                     {({ isVisible }: { isVisible: boolean }) => (
                         <span className="text-red-600 font-bold">
-                            {counting ? <CountUp start={0} end={5298726} duration={10} separator="," /> : '0'}
+                            {counting ? <CountUp start={0} end={5298726} duration={1000} separator="," /> : '0'}
                         </span>
                     )}
                 </VisibilitySensor>
@@ -76,7 +76,7 @@ const SeventhComponent = () => {
                     )
                 }
                 <div className="cursor-pointer max-w-[150px] mt-5">
-                    <a href="https://www.moneyweekly.com.tw/Store/Info/%E9%9B%BB%E5%AD%90%E5%88%8A%E7%89%A9%E5%95%86%E5%93%81/339/" target="_blank">
+                    <a href="https://pse.is/56zyed" target="_blank">
                         <img src="/image/button.png" className="hover:-translate-y-3 duration-500 ease-out"></img>
                     </a>
                 </div>

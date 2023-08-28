@@ -21,7 +21,6 @@ const App = () => {
       <FloatingButton />
       <div className='relative w-screen min-h-screen mt-14'>
         <div className='fixed top-14 left-0 z-10 w-screen'>
-          <MarqueeHeader />
         </div>
         <FirstComponent/>
         <SecondComponent />
