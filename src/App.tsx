@@ -18,10 +18,11 @@ const App = () => {
   return (
     <div className=''>
       <AppBar />
-      <FloatingButton />
+
       <div className='relative w-screen min-h-screen mt-14'>
         <div className='fixed top-14 left-0 z-10 w-screen'>
-        </div>
+        </div>      
+        <FloatingButton />
         <FirstComponent/>
         <SecondComponent />
         <ThirdComponent />

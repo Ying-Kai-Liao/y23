@@ -1,5 +1,4 @@
 import React from "react";
-import { FaFacebook, FaTwitter } from 'react-icons/fa';
 
 const FloatingButton = () => {
     return (
