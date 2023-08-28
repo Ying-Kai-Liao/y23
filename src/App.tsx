@@ -16,7 +16,7 @@ import Footer from './components/footer/Footer';
 
 const App = () => {
   return (
-    <div className=''>
+    <div className='overflow-x-hidden'>
       <AppBar />
 
       <div className='relative w-screen min-h-screen mt-14'>
