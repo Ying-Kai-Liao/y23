@@ -103,7 +103,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                         <a href="/" className="absolute w-[80px] mb-[123vw] ml-[78vw] md:mb-[0vw] md:ml-[0vw] md:w-40">
                             <img src="/image/game/button/back_button.png"></img>
                         </a>
-                        <div className="flex flex-col justify-end items-center max-w-[150px] md:max-w-[250px] md:mb-[1vw] mx-auto"
+                        <div className="flex flex-col justify-end items-center max-w-[150px] lg:max-w-[150px] md:mb-[1vw] mx-auto"
                             onClick={() => setRule(true)}
                         >
                             <img src='/image/game/button/rule_button.png' />

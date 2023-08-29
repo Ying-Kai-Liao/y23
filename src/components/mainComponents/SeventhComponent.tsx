@@ -75,7 +75,7 @@ const SeventhComponent = () => {
                         </span>
                     )
                 }
-                <div className="cursor-pointer max-w-[150px] mt-5">
+                <div className="cursor-pointer max-w-[150px] mt-5 md:max-w-[220px]">
                     <a href="https://pse.is/56zyed" target="_blank">
                         <img src="/image/button.png" className="hover:-translate-y-3 duration-500 ease-out"></img>
                     </a>
