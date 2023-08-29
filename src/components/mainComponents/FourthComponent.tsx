@@ -17,7 +17,7 @@ const FourthComponent = () => {
             <img src="/image/lil_banner3.jpg" className="max-w-[200px] md:max-w-[300px] m-6"></img>
             <span className="md:text-2xl md:pb-20  text-white font-bold">23週年慶QA答題賺獎金，拿購物金再享優惠</span>
             <div className="flex flex-row max-w-[360px] md:max-w-[545px] space-x-8">
-                <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/112281">
+                <a href="/game">
                     <img src="/image/slider-item-img9.png" className="hover:-translate-y-3 hover:transition duration-500 ease-out"></img>
                 </a>
             </div>

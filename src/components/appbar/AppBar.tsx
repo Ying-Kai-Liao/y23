@@ -5,7 +5,13 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 import Hamburger from 'hamburger-react'
 import { useState, useEffect } from "react";
 
-const AppBar = () => {
+interface AppBarProp {
+    game?: boolean
+}
+
+const AppBar: React.FC<AppBarProp> = ({
+    game = false
+}) => {
     // 電腦版設定
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -27,12 +33,12 @@ const AppBar = () => {
 
     useEffect(() => {
         if (isMenuOpen) {
-          setShouldRender(true);
+            setShouldRender(true);
         } else {
-          const timer = setTimeout(() => setShouldRender(false), 1000); 
-          return () => clearTimeout(timer);
+            const timer = setTimeout(() => setShouldRender(false), 1000);
+            return () => clearTimeout(timer);
         }
-      }, [isMenuOpen]);
+    }, [isMenuOpen]);
 
     return (
         <div>
@@ -42,7 +48,7 @@ const AppBar = () => {
                         <img src="/image/logo-16.png" alt='logo' className="flex h-[23px] md:h-[33px] max-h-full mr-2 my-1"></img>
                     </a>
                 </div>
-                <div className="font-bold text-[18px] text-neutral-500 lg:flex items-center px-8 hidden md:flex">
+                {!game && (<><div className="font-bold text-[18px] text-neutral-500 lg:flex items-center px-8 hidden md:flex">
                     <nav className="space-x-8">
                         <span className="hover:text-red-700 cursor-pointer">
                             <a href="#01">理財周刊23週年</a>
@@ -73,18 +79,18 @@ const AppBar = () => {
                         </span>
                     </nav>
                 </div>
-                <div className="flex flex-row flex-grow items-center justify-end px-5 md:hidden">
-                    <button onClick={() => setMenuOpen(!isMenuOpen)}>
-                        <Hamburger toggled={isMenuOpen} />
-                    </button>
-                </div>
+                    <div className="flex flex-row flex-grow items-center justify-end px-5 md:hidden">
+                        <button onClick={() => setMenuOpen(!isMenuOpen)}>
+                            <Hamburger toggled={isMenuOpen} />
+                        </button>
+                    </div></>)}
             </nav>
             {/* Full-screen Menu */}
-            {shouldRender  && (
-                <div 
+            {shouldRender && (
+                <div
                     className={`fixed inset-0 bg-[#65AB9D] bg-opacity-90 flex items-center justify-center z-40 transition-opacity duration-[1000ms] 
                                     ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`
-                                }
+                    }
                     onAnimationEnd={() => !isMenuOpen && setShouldRender(false)}
                 >
                     {/* Your menu content here */}
