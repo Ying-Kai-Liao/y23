@@ -25,7 +25,7 @@ const SeventhComponent = () => {
                     : { backgroundImage: "url(/image/7.jpg)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }
             }
         >
-            <img src="/image/lil_banner6.png" className="max-w-[300px] m-6 mt-[5vw] lg:mt-[15vw] xl:mt-[6vw]"></img>
+            <img src="/image/lil_banner6.png" className="max-w-[300px] m-3 mt-[9vw] md:mt-[10vw] lg:mt-[15vw] xl:mt-[6vw]"></img>
             <span className="text-xl md:text-2xl mb-[15vw] md:mb-30 lg:mb-[10vw] xl:mb-[10vw] px-[70px] text-center ">
                 自我們成立以來，已經服務了超過
                 <VisibilitySensor onChange={onVisibilityChange}>
