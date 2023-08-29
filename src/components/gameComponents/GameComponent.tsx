@@ -78,7 +78,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                                 onClick={handleOnAnswerClick}
                             />
                         </div>
-                        <div className='flex justify-center justify-even mt-5 gap-6'>
+                        <div className='flex justify-center justify-even mt-5 gap-6 md:mb-48'>
                             <Button text='上一題' onClick={() => handleChangeQuestion(-1)} />
                             <Button
                                 text={currentQuestionIndex === totalQuestions - 1 ? '結束' : '下一題'}
@@ -100,10 +100,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                             backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat"
                         }}
                     >
-                        <a href="/" className="absolute w-[80px] mb-[123vw] ml-[78vw] md:mb-[0vw] md:ml-[0vw] md:w-40">
-                            <img src="/image/game/button/back_button.png"></img>
-                        </a>
-                        <div className="flex flex-col justify-end items-center max-w-[150px] lg:max-w-[150px] md:mb-[1vw] mx-auto"
+                        <div className="flex flex-col justify-end items-center max-w-[150px] lg:max-w-[250px] md:mb-[1vw] mx-auto"
                             onClick={() => setRule(true)}
                         >
                             <img src='/image/game/button/rule_button.png' />
@@ -119,9 +116,6 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                             backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat"
                         }}
                     >
-                        <a href="/" className="absolute w-[80px] mb-[123vw] ml-[78vw] md:mb-[0vw] md:ml-[0vw] md:w-40">
-                            <img src="/image/game/button/back_button.png"></img>
-                        </a>
                         <div className="flex flex-col justify-end items-center max-w-[150px] md:max-w-[250px] md:mb-[1vw] mx-auto"
                             onClick={() => setStart(true)}
                         >
@@ -132,17 +126,17 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
             }
             {
                 end && (
-                    <div className="bg-local flex flex-col text-center aspect-[756/3927] justify-end w-full "
+                    <div className="bg-local flex flex-col text-center items-center aspect-[756/3927] justify-end w-full "
                         style={{
-                            backgroundImage: `url(/image/game/game_${score}_score.jpg)`,
+                            backgroundImage: `url(/image/game/score/game_${score}_score.jpg)`,
                             backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat"
                         }}
                     >
-                        <a href="/" className="absolute w-[75px] ml-[40vw] mb-[1vw] md:mb-[5vw] md:ml-[16vw] md:w-40">
-                            <img src="/image/game/button/back_button.png"></img>
+                        <a href="/" className="absolute w-[150px] mb-[1vw] md:mb-[5vw] flex flex-col items-center">
+                            <img src="/image/game/button/back_button.png" className="w-[80px] md:w-[150px]"></img>
                         </a>
-                        <img src="/image/lil_banner6.png" className="absolute max-w-[230px] md:max-w-[400px] m-6 mb-[107vw] ml-[20vw] md:top-[152vw] md:ml-[10vw] lg:mt-[15vw] xl:mt-[6vw]"></img>
-                        <span className="absolute text-base md:text-2xl mb-[98vw] ml-[6vw] md:top-[163vw] md:left-[33vw] lg:mb-[10vw] xl:mb-[10vw]">
+                        <img src="/image/lil_banner6.png" className="max-w-[230px] md:max-w-[400px] m-6"></img>
+                        <span className="text-base md:text-2xl mb-[13vw] md:mb-40">
                             自我們成立以來，已經服務了超過
                             <VisibilitySensor onChange={onVisibilityChange}>
                                 {({ isVisible }: { isVisible: boolean }) => (
@@ -153,7 +147,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                             </VisibilitySensor>
                             人。
                         </span>
-                        <div className="flex flex-col text-sm md:text-lg mb-[15vw] md:mb-[13vw] text-white text-center items-center">
+                        <div className="flex flex-col text-sm md:text-lg  text-white text-center items-center mb-[19vw] md:mb-60">
                             {isMobile
                                 ? (
                                     <span className="font-semibold">
@@ -169,7 +163,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                                     </span>
                                 )
                             }
-                            <img src="/image/banner-overlay-img-about-word.png" className="w-[225px] md:w-[350px] mt-3 mb-3"></img>
+                            <img src="/image/banner-overlay-img-about-word.png" className="w-[225px] md:w-[350px] my-2 md:my-6"></img>
                             {isMobile
                                 ? (
                                     <span className="font-semibold">
@@ -191,28 +185,28 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                                     </span>
                                 )
                             }
-                            <a href="https://pse.is/56zyed" target="_blank" className="absolute top-[120vw] w-[150px] md:w-[280px] md:top-[48vw]">
+                            <a href="https://pse.is/56zyed" target="_blank" className="absolute top-[120vw] w-[150px] md:w-[280px] md:top-[970px]">
                                 <img src="/image/button.png"></img>
                             </a>
-                            <a href="https://pse.is/587egy" target="_blank" className="absolute top-[166vw] right-[60vw] w-[38px] md:top-[65vw] md:right-[54vw] md:w-[80px]">
+                            <a href="https://pse.is/587egy" target="_blank" className={`absolute top-[166vw] ${isMobile ? 'right-[60vw]' : ''} w-[38px] md:top-[1320px] md:transform md:translate-x-[-150px] md:w-[80px]`}>
                                 <img src="/image/icon-FB.png"></img>
                             </a>
-                            <a href="https://pse.is/58en9p" target="_blank" className="absolute top-[166vw] w-[38px] md:top-[65vw] md:right-[48vw] md:w-[80px]">
+                            <a href="https://pse.is/58en9p" target="_blank" className="absolute top-[166vw] w-[38px] md:top-[1320px] md:w-[80px]">
                                 <img src="/image/icon-ig.png"></img>
                             </a>
-                            <a href="https://lin.ee/C5fnsgJ" target="_blank" className="absolute top-[166vw] right-[30vw] w-[38px] md:top-[65vw] md:right-[42vw] md:w-[80px]">
+                            <a href="https://lin.ee/C5fnsgJ" target="_blank" className={`absolute top-[166vw] ${isMobile ? 'right-[30vw]' : ''} w-[38px] md:transform md:translate-x-[150px] md:top-[1320px] md:w-[80px]`}>
                                 <img src="/image/icon-line.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className="absolute top-[266.5vw] w-[138px] md:w-[230px] md:top-[105vw]">
+                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className="absolute top-[266.5vw] w-[138px] md:w-[230px] md:top-[2150px]">
                                 <img src="/image/game/button/go_button.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/Magazine/Info/%E7%90%86%E8%B2%A1%E5%91%A8%E5%88%8A/38582" target="_blank" className="absolute top-[310vw] w-[250px] md:w-[400px] md:top-[122vw]">
+                            <a href="https://www.moneyweekly.com.tw/Magazine/Info/%E7%90%86%E8%B2%A1%E5%91%A8%E5%88%8A/38582" target="_blank" className="absolute top-[310vw] w-[250px] md:w-[400px] md:top-[2500px]">
                                 <img src="/image/game/game_article1.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/125177" target="_blank" className="absolute top-[325vw] w-[250px] md:w-[400px] md:top-[129vw]">
+                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/125177" target="_blank" className="absolute top-[325vw] w-[250px] md:w-[400px] md:top-[2600px]">
                                 <img src="/image/game/game_article2.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className="absolute  top-[340vw] w-[250px] md:w-[400px] md:top-[136vw]">
+                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className="absolute  top-[340vw] w-[250px] md:w-[400px] md:top-[2700px]">
                                 <img src="/image/game/game_article3.png"></img>
                             </a>
                         </div>
