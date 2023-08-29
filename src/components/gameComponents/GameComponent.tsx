@@ -57,7 +57,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
     return (
         <div className={`text-black max-w-[800px] container mx-auto ${end ? '' : 'h-[90vh]'} flex flex-col justify-center`}>
             {start && (
-                <div className="bg-local flex flex-col text-center aspect-[756/1042] justify-end w-full "
+                <div className="bg-local flex flex-col text-center aspect-[756/1042] justify-end w-full"
                     style={{
                         backgroundImage: "url(/image/game/3_game.jpg)",
                         backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat"
@@ -197,7 +197,19 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                             <a href="https://lin.ee/C5fnsgJ" target="_blank" className={`absolute top-[166vw] ${isMobile ? 'right-[30vw]' : ''} w-[38px] md:transform md:translate-x-[150px] md:top-[1320px] md:w-[80px]`}>
                                 <img src="/image/icon-line.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className="absolute top-[266.5vw] w-[138px] md:w-[230px] md:top-[2150px]">
+                            <a href={score == 0
+                                ? `https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224`
+                                : score == 5
+                                    ? 'https://www.moneyweekly.com.tw/ArticleData/Info/Article/127220'
+                                    : score == 10
+                                        ? 'https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224'
+                                        : score == 15
+                                            ? 'https://www.moneyweekly.com.tw/ArticleData/Info/Article/123502'
+                                            : score == 20
+                                                ? 'https://www.moneyweekly.com.tw/ArticleData/Info/Article/127223'
+                                                : 'https://www.moneyweekly.com.tw/ArticleData/Info/Article/126986'
+                                }
+                                target="_blank" className="absolute top-[266.5vw] w-[138px] md:w-[230px] md:top-[2150px]">
                                 <img src="/image/game/button/go_button.png"></img>
                             </a>
                             <a href="https://www.moneyweekly.com.tw/Magazine/Info/%E7%90%86%E8%B2%A1%E5%91%A8%E5%88%8A/38582" target="_blank" className="absolute top-[310vw] w-[250px] md:w-[400px] md:top-[2500px]">
