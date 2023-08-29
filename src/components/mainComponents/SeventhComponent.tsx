@@ -25,7 +25,7 @@ const SeventhComponent = () => {
                     : { backgroundImage: "url(/image/7.jpg)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }
             }
         >
-            <img src="/image/lil_banner6.png" className="max-w-[300px] m-6 mt-[12vw] lg:mt-[15vw] xl:mt-[6vw]"></img>
+            <img src="/image/lil_banner6.png" className="max-w-[300px] m-6 mt-[5vw] lg:mt-[15vw] xl:mt-[6vw]"></img>
             <span className="text-xl md:text-2xl mb-[15vw] md:mb-30 lg:mb-[10vw] xl:mb-[10vw] px-[70px] text-center ">
                 自我們成立以來，已經服務了超過
                 <VisibilitySensor onChange={onVisibilityChange}>
@@ -37,10 +37,10 @@ const SeventhComponent = () => {
                 </VisibilitySensor>
                 人。
             </span>
-            <div className="flex flex-col md:text-lg text-white text-center items-center">
+            <div className="flex flex-col text-sm md:text-lg text-white text-center items-center">
                 {isMobile
                     ? (
-                        <span className="font-semibold">
+                        <span className="font-medium">
                             理財周刊即是你最佳的投資理財夥伴<br />
                             致力於提供高品質的理財知識和投資報告，<br />
                             希望能夠幫助更多的人實現財務自由和幸福生活。
@@ -55,7 +55,7 @@ const SeventhComponent = () => {
                 <img src="/image/banner-overlay-img-about-word.png" className="max-w-[330px] mt-5 mb-5"></img>
                 {isMobile
                     ? (
-                        <span className="font-semibold">
+                        <span className="font-medium">
                             學會正確地投資和管理財務，<br />
                             從而穩健地營造自己的生活。<br />
                             <br />

@@ -20,8 +20,8 @@ const QuestionCard: React.FC<Props> = ({
 }) => {
   return (
     <div>
-      <p className='text-[20px] max-w-[400px]' dangerouslySetInnerHTML={{ __html: question }} />
-      <div className='flex flex-col items-center'>
+      <p className='text-[15px] max-w-[400px] md:text-[25px] md:font-semibold text-center' dangerouslySetInnerHTML={{ __html: question }} />
+      <div className='flex flex-col items-center max-w-[50vw] mx-auto'>
         {answers.map(answer => (
           <div
             key={answer}
