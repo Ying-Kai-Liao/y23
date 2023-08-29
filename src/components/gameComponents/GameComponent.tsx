@@ -135,7 +135,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
             }
             {
                 end && (
-                    <div className="bg-local flex flex-col text-center aspect-[756/2946] justify-end w-full "
+                    <div className="bg-local flex flex-col text-center aspect-[756/3927] justify-end w-full "
                         style={{
                             backgroundImage: `url(/image/game/game_${score}_score.jpg)`,
                             backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat"
@@ -145,7 +145,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                             <img src="/image/game/button/back_button.png"></img>
                         </a>
                         <img src="/image/lil_banner6.png" className="max-w-[200px] md:max-w-[300px] m-6 ml-[22vw] lg:mt-[15vw] xl:mt-[6vw]"></img>
-                        <span className="text-lg md:text-2xl mb-[16vw] md:mb-30 lg:mb-[10vw] xl:mb-[10vw] px-[70px] text-center ">
+                        <span className="text-lg md:text-2xl md:mb-30 lg:mb-[10vw] xl:mb-[10vw] px-[70px] text-center ">
                             自我們成立以來，已經服務了超過
                             <VisibilitySensor onChange={onVisibilityChange}>
                                 {({ isVisible }: { isVisible: boolean }) => (
@@ -194,28 +194,28 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                                     </span>
                                 )
                             }
-                            <a href="https://pse.is/56zyed" target="_blank" className="absolute top-[275vw] right-[58vw] w-20 md:top-[208vw] md:right-[56vw] md:w-40">
+                            <a href="https://pse.is/56zyed" target="_blank" className="absolute top-[120vw] w-[150px] md:top-[208vw] md:right-[56vw] md:w-40">
                                 <img src="/image/button.png"></img>
                             </a>
-                            <a href="https://pse.is/56s6tl" target="_blank" className="absolute top-[272.6vw] right-[36vw] w-5 md:top-[206.5vw] md:right-[39vw] md:w-9">
+                            <a href="https://pse.is/56s6tl" target="_blank" className="absolute top-[166vw] right-[60vw] w-[38px] md:top-[206.5vw] md:right-[39vw] md:w-9">
                                 <img src="/image/icon-FB.png"></img>
                             </a>
-                            <a href="https://pse.is/58h69p" target="_blank" className="absolute top-[272.6vw] right-[28.5vw] w-5 md:top-[206.5vw] md:right-[34vw] md:w-9">
+                            <a href="https://pse.is/58h69p" target="_blank" className="absolute top-[166vw] w-[38px] md:top-[206.5vw] md:right-[34vw] md:w-9">
                                 <img src="/image/icon-ig.png"></img>
                             </a>
-                            <a href="https://lin.ee/C5fnsgJ" target="_blank" className="absolute top-[272.6vw] right-[21vw] w-5 md:top-[206.5vw] md:right-[29vw] md:w-9">
+                            <a href="https://lin.ee/C5fnsgJ" target="_blank" className="absolute top-[166vw] right-[30vw] w-[38px] md:top-[206.5vw] md:right-[29vw] md:w-9">
                                 <img src="/image/icon-line.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className="absolute top-[318vw] right-[39vw] w-20 md:top-[240.5vw] md:right-[42vw] md:w-40">
+                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className="absolute top-[266vw] w-[150px] md:top-[240.5vw] md:right-[42vw] md:w-40">
                                 <img src="/image/game/button/go_button.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/Magazine/Info/%E7%90%86%E8%B2%A1%E5%91%A8%E5%88%8A/38582" target="_blank" className="absolute top-[340vw] w-29 md:top-[259vw] md:w-70">
+                            <a href="https://www.moneyweekly.com.tw/Magazine/Info/%E7%90%86%E8%B2%A1%E5%91%A8%E5%88%8A/38582" target="_blank" className="absolute top-[310vw] w-[250px] md:top-[259vw] md:w-70">
                                 <img src="/image/game/game_article1.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/125177" target="_blank" className="absolute top-[350vw] w-29 md:top-[265vw] md:w-70">
+                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/125177" target="_blank" className="absolute top-[325vw] w-[250px] md:top-[265vw] md:w-70">
                                 <img src="/image/game/game_article2.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className="absolute top-[360vw] w-29 md:top-[271vw] md:w-70">
+                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className="absolute  top-[340vw] w-[250px] md:top-[271vw] md:w-70">
                                 <img src="/image/game/game_article3.png"></img>
                             </a>
                         </div>
