@@ -136,7 +136,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                             <img src="/image/game/button/back_button.png" className="w-[80px] md:w-[150px]"></img>
                         </a>
                         <img src="/image/lil_banner6.png" className="max-w-[230px] md:max-w-[400px] m-3"></img>
-                        <span className="text-base md:text-2xl mb-[13vw] md:mb-24">
+                        <span className="text-base md:text-2xl mb-[13vw] md:mb-72">
                             自我們成立以來，已經服務了超過
                             <VisibilitySensor onChange={onVisibilityChange}>
                                 {({ isVisible }: { isVisible: boolean }) => (
@@ -147,7 +147,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                             </VisibilitySensor>
                             人。
                         </span>
-                        <div className="flex flex-col text-base md:text-lg  text-white text-center items-center mb-[38vw] md:mb-[480px]">
+                        <div className="flex flex-col text-base md:text-lg  text-white text-center items-center mb-[38vw] md:mb-[400px]">
                             {isMobile
                                 ? (
                                     <span className="font-semibold">
@@ -185,16 +185,16 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                                     </span>
                                 )
                             }
-                            <a href="https://pse.is/56zyed" target="_blank" className="absolute top-[123vw] w-[150px] md:w-[280px] md:top-[915px]">
+                            <a href="https://pse.is/56zyed" target="_blank" className="absolute top-[123vw] w-[150px] md:w-[280px] md:top-[1000px]">
                                 <img src="/image/button.png"></img>
                             </a>
-                            <a href="https://pse.is/587egy" target="_blank" className={`absolute top-[170vw] ${isMobile ? 'right-[60vw]' : ''} w-[38px] md:top-[1258px] md:transform md:translate-x-[-110px] md:w-[80px]`}>
+                            <a href="https://pse.is/587egy" target="_blank" className={`absolute top-[170vw] ${isMobile ? 'right-[60vw]' : ''} w-[38px] md:top-[1350px] md:transform md:translate-x-[-110px] md:w-[80px]`}>
                                 <img src="/image/icon-FB.png"></img>
                             </a>
-                            <a href="https://pse.is/58en9p" target="_blank" className="absolute top-[170vw] w-[38px] md:top-[1258px] md:w-[80px]">
+                            <a href="https://pse.is/58en9p" target="_blank" className="absolute top-[170vw] w-[38px] md:top-[1350px] md:w-[80px]">
                                 <img src="/image/icon-ig.png"></img>
                             </a>
-                            <a href="https://lin.ee/C5fnsgJ" target="_blank" className={`absolute top-[170vw] ${isMobile ? 'right-[30vw]' : ''} w-[38px] md:transform md:translate-x-[110px] md:top-[1258px] md:w-[80px]`}>
+                            <a href="https://lin.ee/C5fnsgJ" target="_blank" className={`absolute top-[170vw] ${isMobile ? 'right-[30vw]' : ''} w-[38px] md:transform md:translate-x-[110px] md:top-[1350px] md:w-[80px]`}>
                                 <img src="/image/icon-line.png"></img>
                             </a>
                             <a href={score == 0
@@ -209,16 +209,16 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                                                 ? 'https://www.moneyweekly.com.tw/ArticleData/Info/Article/127223'
                                                 : 'https://www.moneyweekly.com.tw/ArticleData/Info/Article/126986'
                                 }
-                                target="_blank" className="absolute top-[271vw] w-[138px] md:w-[230px] md:top-[2009px]">
+                                target="_blank" className="absolute top-[271vw] w-[138px] md:w-[230px] md:top-[2180px]">
                                 <img src="/image/game/button/go_button.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/Magazine/Info/%E7%90%86%E8%B2%A1%E5%91%A8%E5%88%8A/38582" target="_blank" className="absolute top-[316vw] w-[250px] md:w-[400px] md:top-[2320px]">
+                            <a href="https://www.moneyweekly.com.tw/Magazine/Info/%E7%90%86%E8%B2%A1%E5%91%A8%E5%88%8A/38582" target="_blank" className="absolute top-[316vw] w-[250px] md:w-[400px] md:top-[2500px]">
                                 <img src="/image/game/game_article1.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/125177" target="_blank" className="absolute top-[331vw] w-[250px] md:w-[400px] md:top-[2420px]">
+                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/125177" target="_blank" className="absolute top-[331vw] w-[250px] md:w-[400px] md:top-[2600px]">
                                 <img src="/image/game/game_article2.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className="absolute  top-[346vw] w-[250px] md:w-[400px] md:top-[2520px]">
+                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className="absolute  top-[346vw] w-[250px] md:w-[400px] md:top-[2700px]">
                                 <img src="/image/game/game_article3.png"></img>
                             </a>
                         </div>
