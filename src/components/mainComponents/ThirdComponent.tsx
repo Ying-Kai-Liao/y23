@@ -23,10 +23,10 @@ const ThirdComponent = () => {
                 <a href="https://pse.is/58g2fl" target="_blank">
                     <img src="/image/slider-item-img6.png" className="hover:-translate-y-3 duration-500 ease-out"></img>
                 </a>
-                <a href="https://pse.is/57fva8" target="_blank">
+                <a href="https://pse.is/56sh6t" target="_blank">
                     <img src="/image/slider-item-img7.png" className="hover:-translate-y-3 duration-500 ease-out"></img>
                 </a>
-                <a href="https://pse.is/56sh6t" target="_blank">
+                <a href="https://pse.is/57fva8" target="_blank">
                     <img src="/image/slider-item-img8.png" className="hover:-translate-y-3 duration-500 ease-out"></img>
                 </a>
             </div>

@@ -37,7 +37,7 @@ const SeventhComponent = () => {
                 </VisibilitySensor>
                 人。
             </span>
-            <div className="flex flex-col text-sm md:text-lg text-white text-center items-center">
+            <div className="flex flex-col text-sm md:text-lg text-white text-center items-center md:mt-12">
                 {isMobile
                     ? (
                         <span className="font-medium">
@@ -75,7 +75,7 @@ const SeventhComponent = () => {
                         </span>
                     )
                 }
-                <div className="cursor-pointer max-w-[150px] mt-5 md:max-w-[220px]">
+                <div className="cursor-pointer max-w-[150px] mt-10 md:max-w-[220px]">
                     <a href="https://pse.is/56zyed" target="_blank">
                         <img src="/image/button.png" className="hover:-translate-y-3 duration-500 ease-out"></img>
                     </a>

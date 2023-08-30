@@ -200,7 +200,7 @@ const SixthComponent = () => {
                 <>
                   <div className="border border-white">
                     <a
-                      href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/125177"
+                      href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/124132"
                       target="_blank"
                     >
                       <img
@@ -215,7 +215,7 @@ const SixthComponent = () => {
                   </div>
                   <div className="border border-white">
                     <a
-                      href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/123780"
+                      href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/126840"
                       target="_blank"
                     >
                       <img
@@ -231,7 +231,7 @@ const SixthComponent = () => {
 
                   <div className="border border-white">
                     <a
-                      href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/126986"
+                      href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/123502"
                       target="_blank"
                     >
                       <img
