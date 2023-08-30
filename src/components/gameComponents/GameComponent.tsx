@@ -136,7 +136,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                             <img src="/image/game/button/back_button.png" className="w-[80px] md:w-[150px]"></img>
                         </a>
                         <img src="/image/lil_banner6.png" className="max-w-[230px] md:max-w-[400px] m-3"></img>
-                        <span className="text-base md:text-2xl mb-[13vw] md:mb-72">
+                        <span className="text-base md:text-2xl mb-[13vw] md:mb-50">
                             自我們成立以來，已經服務了超過
                             <VisibilitySensor onChange={onVisibilityChange}>
                                 {({ isVisible }: { isVisible: boolean }) => (
@@ -147,7 +147,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                             </VisibilitySensor>
                             人。
                         </span>
-                        <div className="flex flex-col text-base md:text-lg  text-white text-center items-center mb-[38vw] md:mb-[400px]">
+                        <div className="flex flex-col text-base md:text-lg  text-white text-center items-center mb-[38vw] md:mb-[540px]">
                             {isMobile
                                 ? (
                                     <span className="font-semibold">
@@ -209,16 +209,16 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                                                 ? 'https://www.moneyweekly.com.tw/ArticleData/Info/Article/127223'
                                                 : 'https://www.moneyweekly.com.tw/ArticleData/Info/Article/126986'
                                 }
-                                target="_blank" className={`absolute ${isMobile ? 'top-[282vw]' : ''} w-[138px] md:w-[230px] md:top-[2230px]"`}>
+                                target="_blank" className={`absolute ${isMobile ? 'top-[282vw]' : ''} w-[138px] md:w-[230px] md:top-[2230px]`}>
                                 <img src="/image/game/button/go_button.png"></img>
                             </a>
                             <a href="https://www.moneyweekly.com.tw/Magazine/Info/%E7%90%86%E8%B2%A1%E5%91%A8%E5%88%8A/38582" target="_blank" className={`absolute ${isMobile ? 'top-[330vw]' : ''} w-[250px] md:w-[400px] md:top-[2560px]`}>
                                 <img src="/image/game/game_article1.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/125177" target="_blank" className={`absolute ${isMobile ? 'top-[345vw]' : ''} w-[250px] md:w-[400px] md:top-[2560px]`}>
+                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/125177" target="_blank" className={`absolute ${isMobile ? 'top-[345vw]' : ''} w-[250px] md:w-[400px] md:top-[2680px]`}>
                                 <img src="/image/game/game_article2.png"></img>
                             </a>
-                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className={`absolute ${isMobile ? 'top-[360vw]' : ''} w-[250px] md:w-[400px] md:top-[2560px]`}>
+                            <a href="https://www.moneyweekly.com.tw/ArticleData/Info/Article/127224" target="_blank" className={`absolute ${isMobile ? 'top-[360vw]' : ''} w-[250px] md:w-[400px] md:top-[2800px]`}>
                                 <img src="/image/game/game_article3.png"></img>
                             </a>
                         </div>
