@@ -55,7 +55,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
     console.log(size);
 
     return (
-        <div className={`text-black max-w-[756px] h-[1042px] container mx-auto ${end ? '' : 'h-[90vh]'} flex flex-col justify-center`}>
+        <div className={`text-black container ${end ? '' : 'h-[90vh]'} flex flex-col justify-center`}>
             {start && (
                 <div className="bg-local flex flex-col text-center aspect-[756/1042] justify-end w-full"
                     style={{
@@ -78,7 +78,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                                 onClick={handleOnAnswerClick}
                             />
                         </div>
-                        <div className='flex justify-center justify-even mt-5 gap-6 md:mb-48'>
+                        <div className='flex justify-center justify-even mt-5 gap-6 md:mb-40'>
                             <Button text='上一題' onClick={() => handleChangeQuestion(-1)} />
                             <Button
                                 text={currentQuestionIndex === totalQuestions - 1 ? '結束' : '下一題'}
@@ -100,7 +100,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                             backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat"
                         }}
                     >
-                        <div className="flex flex-col justify-end items-center max-w-[150px] lg:max-w-[250px] md:mb-[1vw] mx-auto"
+                        <div className="flex flex-col justify-end items-center max-w-[150px] lg:max-w-[220px] md:mb-[1vw] mx-auto"
                             onClick={() => setRule(true)}
                         >
                             <img src='/image/game/button/rule_button.png' />
@@ -116,7 +116,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
                             backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat"
                         }}
                     >
-                        <div className="flex flex-col justify-end items-center max-w-[150px] md:max-w-[250px] md:mb-[1vw] mx-auto"
+                        <div className="flex flex-col justify-end items-center max-w-[150px] md:max-w-[220px] md:mb-[1vw] mx-auto"
                             onClick={() => setStart(true)}
                         >
                             <img src='/image/game/button/start_button.png' />
