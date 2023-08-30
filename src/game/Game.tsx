@@ -9,7 +9,7 @@ const getQuestions = () => {
         response_code: 0,
         results: [
             {
-                question: '第一關：家庭分配-家庭理財分工</br>月光族夫妻怎麼理財?',
+                question: '第一關：家庭分配-家庭理財分工</br>1.月光族夫妻怎麼理財?',
                 correct_answer: '先記帳並存錢',
                 incorrect_answers: ['增加收入', '超級節省']
             },

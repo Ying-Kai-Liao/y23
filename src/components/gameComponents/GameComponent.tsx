@@ -55,7 +55,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
     console.log(size);
 
     return (
-        <div className={`text-black max-w-[800px] container mx-auto ${end ? '' : 'h-[90vh]'} flex flex-col justify-center`}>
+        <div className={`text-black container mx-auto ${end ? '' : 'h-[90vh]'} flex flex-col justify-center`}>
             {start && (
                 <div className="bg-local flex flex-col text-center aspect-[756/1042] justify-end w-full"
                     style={{
@@ -94,7 +94,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
             }
             {
                 !rule && (
-                    <div className="bg-local flex flex-col text-center aspect-[756/1042] justify-end w-full "
+                    <div className="bg-local flex flex-col text-center items-center aspect-[756/1042] justify-end w-full "
                         style={{
                             backgroundImage: "url(/image/game/1_game.jpg)",
                             backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat"
@@ -110,7 +110,7 @@ const GameComponent = ({ questions, totalQuestions }: Props) => {
             }
             {
                 rule && !start && !end && (
-                    <div className="bg-local flex flex-col text-center aspect-[756/1042] justify-end w-full "
+                    <div className="bg-local flex flex-col text-center items-center aspect-[756/1042] justify-end w-full "
                         style={{
                             backgroundImage: "url(/image/game/2_game.jpg)",
                             backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat"
