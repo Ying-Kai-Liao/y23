@@ -14,7 +14,7 @@ const App = () => {
       <BrowserRouter >
         {/* <AppBar />
         <FloatingButton /> */}
-        <div className='relative w-screen min-h-screen mt-14'>
+        <div className=' w-screen min-h-screen mt-14'>
           {/* <div className='fixed top-16 md:top-14 left-0 z-10 w-screen'>
             <MarqueeHeader />
           </div> */}
