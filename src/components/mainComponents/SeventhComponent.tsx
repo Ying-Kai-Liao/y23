@@ -31,13 +31,13 @@ const SeventhComponent = () => {
                 <VisibilitySensor onChange={onVisibilityChange}>
                     {({ isVisible }: { isVisible: boolean }) => (
                         <span className="text-red-600 font-bold">
-                            {counting ? <CountUp start={0} end={5298726} duration={1000} separator="," /> : '0'}
+                            {counting ? <CountUp start={0} end={5298726} duration={100} separator="," /> : '0'}
                         </span>
                     )}
                 </VisibilitySensor>
                 人。
             </span>
-            <div className="flex flex-col text-sm md:text-lg text-white text-center items-center md:mt-12">
+            <div className="flex flex-col text-sm md:text-lg text-white text-center items-center md:mt-8">
                 {isMobile
                     ? (
                         <span className="font-medium">
