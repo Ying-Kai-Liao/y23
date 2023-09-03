@@ -11,7 +11,7 @@ const getQuestions = () => {
             {
                 question: '第一關：家庭分配-家庭理財分工</br>1.月光族夫妻怎麼理財?',
                 correct_answer: '先記帳並存錢',
-                incorrect_answers: ['增加收入', '超級節省a']
+                incorrect_answers: ['增加收入', '超級節省']
             },
             {
                 question: '第二關：人生保障-建立人生保障最低限度</br>2.保險怎麼挑，才不踩雷？',
